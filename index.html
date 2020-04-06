@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion De Devise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+
+    <h1>Sort by name or age.</h1>
+    <p>Click "First Name" or "Age" to order.</p>
+    <div class="form">
+            <input placeholder="First name*" id="fname" type="text">
+            <input placeholder="Last name*" id="lname" type="text">
+            <input placeholder="Age*" id="age" type="text">
+            <input placeholder="Profession*" id="profession" type="text">
+            <input onclick="add();" type="button" class="button" value="Add">
+    </div>
+
+
+
+        <table id="myTable">
+            <thead>
+                <tr class="table100-head">
+                    <th class="column1" onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">First Name</th>
+                    <th class="column2">Last Name</th>
+                    <th class="column3" onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(3)')" style="cursor:pointer">Age</th>
+                    <th class="column4">Profession</th>
+                </tr>
+            </thead>
+            <tbody id="result"></tbody>
+        </table>
+
+
+</body>
+
+</html>
